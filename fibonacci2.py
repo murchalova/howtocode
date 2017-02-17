@@ -1,5 +1,5 @@
 listFib = []
-def fib(i):
+def fib(i, f):
     m=1
     k=0
     while True:
@@ -9,7 +9,8 @@ def fib(i):
         if r > i:
             break
         listFib.append(r)
+        listFib.join(map(str, f))
     return listFib
-def print_fib(i):
-    print(fib(i))
-print_fib(200)
+def print_fib(i, f):
+    print(fib(i, f))
+print_fib(200, 'ss')
