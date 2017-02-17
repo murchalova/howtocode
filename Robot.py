@@ -4,6 +4,8 @@ c = len(n)
 print ('Hello,',n + '!')
 print('You have',c,'characters in your name.')
 if c % 2 == 0:
-    print('It is an even number.')
+    i = 'even number.'
+    print('It is an', i)
 else:
-    print('It is an uneven number.')
+    i = 'odd number.'
+    print('It is an', i)
