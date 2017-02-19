@@ -1,11 +1,22 @@
-n = input('Введите имя: ')
-c = len(n)
+def Name():
+    n = input('Enter your name: ')
+    return n
 
-print ('Hello,',n + '!')
-print('You have',c,'characters in your name.')
-if c % 2 == 0:
-    i = 'even number.'
-    print('It is an', i)
-else:
-    i = 'odd number.'
-    print('It is an', i)
+def Number(t):
+    c = len(t)
+    return c
+
+def evenOdd(x):
+    if x % 2 == 0:
+        x = 'even number.'
+    else:
+        x = 'odd number.'
+    return x
+
+def printALL():
+    n = Name()
+    c = Number(n)
+    i = evenOdd(c)
+    print('Hello, ' + n + '!','You have '+ str(c) +' characters in your name.', 'It is an ' + str(i), sep='\n')
+
+printALL()
